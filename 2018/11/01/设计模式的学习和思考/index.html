@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="http://www.songhuguo.com">
   <title>设计模式、DAO模式 | 忘忧和谐的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、设计模式中接口的设计和作用设计的接口后，接口里面声明了公共调用和使用的方法如下图  其他具体类实现该方法例如  这产生两个效果： 1、具体类实现了接口包含的函数的具体内容 2、当需要某个具体类该函数的具体实现是，不需要创建出那个类的对象，只要创建那个函数所属接口的对象即可，然后通过  接口 = new 实体类 的方式来声明出接口对象，间接去调用实体类的那个实现函数（毕竟继承了那个接口）。类似下">
+  <meta name="description" content="设计模式中接口的设计和作用">
 <meta name="keywords" content="设计模式的思考">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式、DAO模式">
 <meta property="og:url" content="http://www.songhuguo.com/2018/11/01/设计模式的学习和思考/index.html">
 <meta property="og:site_name" content="忘忧和谐的博客">
-<meta property="og:description" content="1、设计模式中接口的设计和作用设计的接口后，接口里面声明了公共调用和使用的方法如下图  其他具体类实现该方法例如  这产生两个效果： 1、具体类实现了接口包含的函数的具体内容 2、当需要某个具体类该函数的具体实现是，不需要创建出那个类的对象，只要创建那个函数所属接口的对象即可，然后通过  接口 = new 实体类 的方式来声明出接口对象，间接去调用实体类的那个实现函数（毕竟继承了那个接口）。类似下">
+<meta property="og:description" content="设计模式中接口的设计和作用">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.imgur.com/XMWI8bL.png">
 <meta property="og:image" content="https://i.imgur.com/N6pNp2G.png">
 <meta property="og:image" content="https://i.imgur.com/vV3D1nA.png">
-<meta property="og:updated_time" content="2018-11-01T08:11:12.307Z">
+<meta property="og:updated_time" content="2018-11-01T08:41:27.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式、DAO模式">
-<meta name="twitter:description" content="1、设计模式中接口的设计和作用设计的接口后，接口里面声明了公共调用和使用的方法如下图  其他具体类实现该方法例如  这产生两个效果： 1、具体类实现了接口包含的函数的具体内容 2、当需要某个具体类该函数的具体实现是，不需要创建出那个类的对象，只要创建那个函数所属接口的对象即可，然后通过  接口 = new 实体类 的方式来声明出接口对象，间接去调用实体类的那个实现函数（毕竟继承了那个接口）。类似下">
+<meta name="twitter:description" content="设计模式中接口的设计和作用">
 <meta name="twitter:image" content="https://i.imgur.com/XMWI8bL.png">
   
     <link rel="alternative" href="/atom.xml" title="忘忧和谐的博客" type="application/atom+xml">
@@ -179,7 +179,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1、设计模式中接口的设计和作用"><a href="#1、设计模式中接口的设计和作用" class="headerlink" title="1、设计模式中接口的设计和作用"></a>1、设计模式中接口的设计和作用</h2><p>设计的接口后，接口里面声明了公共调用和使用的方法如下图</p>
+        <h2 id="设计模式中接口的设计和作用"><a href="#设计模式中接口的设计和作用" class="headerlink" title="设计模式中接口的设计和作用"></a>设计模式中接口的设计和作用</h2><a id="more"></a>
+<p>设计的接口后，接口里面声明了公共调用和使用的方法如下图</p>
 <p><img src="https://i.imgur.com/XMWI8bL.png" alt=""></p>
 <p>其他具体类实现该方法例如</p>
 <p><img src="https://i.imgur.com/N6pNp2G.png" alt=""></p>
