@@ -152,6 +152,98 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-设计模式的学习和思考" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/01/设计模式的学习和思考/">设计模式、DAO模式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/01/设计模式的学习和思考/" class="archive-article-date">
+  	<time datetime="2018-11-01T08:06:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1、设计模式中接口的设计和作用"><a href="#1、设计模式中接口的设计和作用" class="headerlink" title="1、设计模式中接口的设计和作用"></a>1、设计模式中接口的设计和作用</h2><p>设计的接口后，接口里面声明了公共调用和使用的方法如下图</p>
+<p><img src="https://i.imgur.com/XMWI8bL.png" alt=""></p>
+<p>其他具体类实现该方法例如</p>
+<p><img src="https://i.imgur.com/N6pNp2G.png" alt=""></p>
+<p><strong>这产生两个效果：</strong></p>
+<p>1、具体类实现了接口包含的函数的具体内容</p>
+<p>2、当需要某个具体类该函数的具体实现是，不需要创建出那个类的对象，只要创建那个函数所属接口的对象即可，然后通过  <strong>接口 = new 实体类</strong> 的方式来声明出接口对象，间接去调用实体类的那个实现函数（毕竟继承了那个接口）。类似下图的使用</p>
+<p><img src="https://i.imgur.com/vV3D1nA.png" alt=""></p>
+<p>而且这样做还有一个<strong>好处</strong>： </p>
+<ul>
+<li><p>就是你想调用一个函数，这个函数在很多类中都有不同的实现，那么<strong>只需要创建一个他们的公共接口对象</strong>（包含那个函数），然后分别取通过<strong>接口 = new 实体类</strong>的方式，<strong>就可以不断用创建那个接口对象来调用各个具体实现对象了</strong>，而且也不用管各自对象的其他不相关函数。</p>
+</li>
+<li><p>同时,在自个定义函数的时候，<strong>传入参数使用接口对象</strong>将会使函数更通用。这样就能<strong>使继承这个接口的对象都可以调用这个函数</strong>。这个函数就不再是只能传入一种对象了。</p>
+</li>
+</ul>
+<p>本文为读[1]的设计模式而产生的理解。相关代码样例均来自[1]中。</p>
+<blockquote>
+<p>[1] <a href="https://github.com/iluwatar/java-design-patterns/blob/master/dao/README.md" target="_blank" rel="noopener">https://github.com/iluwatar/java-design-patterns/blob/master/dao/README.md</a></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">设计模式的思考</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/01/设计模式的学习和思考/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-[转载] [译] Google Interview University 一套完整的学习手册帮助自己准备 Google 的面试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -354,6 +446,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">杂文资料</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">设计模式的思考</a>
               </li>
             
             <div class="clearfix"></div>
